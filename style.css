@@ -1,0 +1,103 @@
+* { box-sizing: border-box;}
+body {
+    background-color: green;
+}
+
+.pelo {
+    background-color: #4b3e36;
+    width: 500px;
+    height: 180px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 80px;
+    border-radius: 20%;
+}
+
+.Cara {
+    background-color: #cbab92;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    border-radius: 15%;
+}
+
+.gafas {
+    position: relative;
+    height: 200px;
+    top: 200px;
+}
+
+.gafa{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    border: 0.1em solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.cristal{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 160px;
+    background-color: #cbab92;
+    width: 160px;
+    border-radius: 50%;
+    top: 17px;
+
+}
+
+.gafa-izq {
+    left: 260px;
+}
+
+.gafa-der {
+    right: 260px;
+}
+
+.rectangulo{
+    position: absolute;
+    background-color: black;
+    width: 110px;
+    height: 20px;
+    left:190px;
+    top:90px;
+}
+
+.pupilas {
+    z-index: 10;
+    position: absolute;
+    height: 120px;
+    top: 38px;
+    background-color: black;
+    width: 120px;
+    border-radius: 50%;
+    left: 40px;
+}
+
+.nariz {
+    position: absolute;
+    height: 70px;
+    top: 365px;
+}
+
+.triangulo {
+    position: absolute;
+    left: 220px;
+    border-left: 60px solid #b69373;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transform: rotate(-90deg);
+}
