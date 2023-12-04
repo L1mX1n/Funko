@@ -2,7 +2,7 @@
 body {
     animation-name: fondo;
     animation-duration: 3s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     background-color: black;
     background-size: cover;
@@ -56,6 +56,7 @@ body {
     position: relative;
     height: 200px;
     top: 220px;
+    z-index: 1;
 }
 
 .gafa{
@@ -68,6 +69,7 @@ body {
     border: 0.1em solid #37383c;
     border-radius: 50%;
     background-color: #37383c;
+    z-index: 4;
 }
 
 .cristal{
@@ -80,11 +82,12 @@ body {
     width: 160px;
     border-radius: 50%;
     top: 17px;
+    z-index: 6;
 }
 
 .palo-izq {
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
     background-color: #37383c;
     margin: 0;
     width: 20px;
@@ -112,16 +115,18 @@ body {
 
 .gafa-izq {
     left: 260px;
+    z-index: 100;
 }
 
 .gafa-der {
     right: 260px;
+    z-index: 10000;
 }
 
 .rectangulo{
     position: absolute;
     background-color: #37383c;
-    width: 110px;
+    width: 80px;
     height: 20px;
     left:190px;
     top:90px;
@@ -136,6 +141,7 @@ body {
     width: 120px;
     border-radius: 50%;
     left: 40px;
+    z-index: 10000;
 }
 
 .nariz {
@@ -354,8 +360,55 @@ body {
     top: 597px;
     border-radius: 100%;
     animation-name: paloa;
-    animation-duration: 0.5s;
+    animation-duration: 2s;
     text-shadow: 10%;
     animation-direction: normal;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
+}
+.circulo2 {
+    position: absolute;
+    z-index: 10000;
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    left: 218px;
+    top: 597px;
+    border-radius: 100%;
+    animation-name: paloa2;
+    animation-duration: 2s;
+    text-shadow: 10%;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes paloa2 {
+    0%   {background-color:red; transform: rotate(0deg)  translate(-30px) rotate(0deg);}
+    25%  {background-color:yellow; transform: rotate(90deg)  translate(-30px) rotate(90deg);}
+    50%  {background-color:blue; transform: rotate(180deg)  translate(-30px) rotate(180deg);}
+    75%  {background-color:green; transform: rotate(270deg)  translate(-30px) rotate(270deg);}
+    100% {background-color:red; transform: rotate(360deg) translate(-30px) rotate(-360deg);}
+}
+
+.ceja1 {
+    position: absolute;
+    z-index: 5;
+    height: 25px;
+    width: 140px;
+    background-color: #916c52;
+    transform: rotate(5deg);
+    top: 1px;
+    left: 60px;
+    border-radius: 30%;
+}
+
+.ceja2 {
+    position: absolute;
+    z-index: 5;
+    height: 25px;
+    width: 140px;
+    background-color: #916c52;
+    transform: rotate(-5deg);
+    top: 1px;
+    right: 60px;
+    border-radius: 30%;
 }
