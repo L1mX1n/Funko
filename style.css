@@ -1,6 +1,22 @@
 * { box-sizing: border-box;}
 body {
-    background-color: cyan;
+    animation-name: fondo;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    background-color: black;
+    background-size: cover;
+}
+
+@keyframes fondo {
+    
+    0% {
+        background-image: url(https://images4.alphacoders.com/122/122706.jpg);
+    }
+
+    100% {
+        background-image: url(https://images4.alphacoders.com/122/122706.jpg);
+    }
 }
 
 .contenedor {
@@ -296,7 +312,7 @@ body {
     25%  {background-color:yellow; transform: rotate(90deg)  translate(-30px) rotate(90deg);}
     50%  {background-color:blue; transform: rotate(180deg)  translate(-30px) rotate(180deg);}
     75%  {background-color:green; transform: rotate(270deg)  translate(-30px) rotate(270deg);}
-    100% {background-color:red; transform: rotate(360deg) translate(-30px) rotate(-360deg)scale(6000%);}
+    100% {background-color:red; transform: rotate(360deg) translate(-30px) rotate(-360deg) scale(6000%);}
 }
 
 .pie-izq {
